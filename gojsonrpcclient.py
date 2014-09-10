@@ -75,8 +75,8 @@ class GoJsonRpcClient(object):
             exposed functions. 
 
         Return: 
-            The "result" member of the returned dictionary is there was no 
-            error. If an error occured, and exception is raised. 
+            The "result" member of the returned dictionary if there was no 
+            error. If an error occured, an exception is raised. 
         """
         _id = next(self._id)
         req = dict(id=_id, 
